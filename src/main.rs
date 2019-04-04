@@ -7,8 +7,8 @@ use core::panic::PanicInfo;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    for _ in 0..10 {
-        println!("Hello, World{}", "!");
+    for i in 0..30 {
+        println!("Hello, World{} Line {}", "!", i);
     }
     panic!("Panicked at thee end");
     loop {}
